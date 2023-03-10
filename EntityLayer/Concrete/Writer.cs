@@ -11,11 +11,15 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int WriterID { get; set; }
-        public string WriterName { get; set; }
+		public string WriterName { get; set; }
         public string WriterAbout { get; set; }
         public string WriterImage { get; set; }
         public string WriterMail { get; set; }
-        public string WriterPassword { get; set; }
+		public string WriterPassword { get; set; }
+		public string ConfirmPassword { get; set; }
+        public string Cities { get; set; }
         public bool WriterStatus { get; set; }
-    }
+		public List<CitiesAddViewModel> Blogs { get; set; }
+		public List<CitiesAddViewModel> CitiesList { get; set; }
+	}
 }
