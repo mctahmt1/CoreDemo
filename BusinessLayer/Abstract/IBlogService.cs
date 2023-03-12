@@ -9,12 +9,12 @@ namespace BusinessLayer.Abstract
 {
 	public interface IBlogService
 	{
-		void BlogAdd(CitiesAddViewModel blog);
-		void BlogDelete(CitiesAddViewModel blog);
-		void BlogUpdate(CitiesAddViewModel blog);
-		List<CitiesAddViewModel> GetList();
-		CitiesAddViewModel GetById(int id);
-		List<CitiesAddViewModel> GetBlogListWithCategory();
-		List<CitiesAddViewModel> GetBlogListByWriter(int id);
+		void BlogAdd(Blog blog);
+		void BlogDelete(Blog blog);
+		void BlogUpdate(Blog blog);
+		List<Blog> GetList();
+		Blog GetById(int id);
+		List<Blog> GetBlogListWithCategory();
+		List<Blog> GetBlogListByWriter(int id);
 	}
 }

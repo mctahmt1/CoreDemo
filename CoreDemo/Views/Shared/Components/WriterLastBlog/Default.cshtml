@@ -1,9 +1,11 @@
-﻿
-@model             List<EntityLayer.Concrete.CitiesAddViewModel>
-
-
+﻿@model List<Blog>
 <div class="tech-btm">
 	<h4>Yazarın Diğer Yazıları</h4>
+	@if(Model.Count() == 0)
+	{
+		<h5 class="mt-1">Yazarın başka yazısı bulunamadı.</h5>
+	}
+	else{
 	@foreach(var item in Model.Take(3))
 	{
 	<div class="blog-grids row mb-3">
@@ -24,5 +26,6 @@
 			</div>
 		</div>
 	</div>
+	}
 	}
 </div>

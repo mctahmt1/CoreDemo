@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IBlogDal : IGenericDal<CitiesAddViewModel>
+    public interface IBlogDal : IGenericDal<Blog>
     {
-        List<CitiesAddViewModel> GetListWithCategory();
+        List<Blog> GetListWithCategory();
     }
 }

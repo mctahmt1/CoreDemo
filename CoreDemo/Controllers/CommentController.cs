@@ -23,7 +23,7 @@ namespace CoreDemo.Controllers
 		{
 			p.CommentDate = DateTime.Parse(DateTime.Now.ToShortDateString());
 			p.CommentStatus = true;
-			p.BlogID = 4;
+			p.BlogID = 1004;
 			cm.CommentAdd(p);
 			return PartialView();
 		}

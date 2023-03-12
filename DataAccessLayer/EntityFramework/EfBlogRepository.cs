@@ -12,9 +12,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-	public class EfBlogRepository : GenericRepository<CitiesAddViewModel>, IBlogDal
+	public class EfBlogRepository : GenericRepository<Blog>, IBlogDal
 	{
-		public List<CitiesAddViewModel> GetListWithCategory()
+		public List<Blog> GetListWithCategory()
 		{
 			using (var c = new Context())
 				return c.Blogs.Include(x => x.Category).ToList();

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    public class CitiesAddViewModel
+    public class Blog
     {
         [Key]
         public int BlogID { get; set; }
@@ -20,7 +20,7 @@ namespace EntityLayer.Concrete
         public int CategoryID { get; set; }
         public Category Category { get; set; }
 		public int WriterID { get; set; }
-		public Writer writer { get; set; }
+		public Writer Writer { get; set; }
 		public List<Comment> Comments { get; set; }
 		
 	}

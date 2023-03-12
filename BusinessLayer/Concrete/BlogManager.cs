@@ -18,42 +18,42 @@ namespace BusinessLayer.Concrete
 			_blogDal = blogDal;
 		}
 
-		public void BlogAdd(CitiesAddViewModel blog)
+		public void BlogAdd(Blog blog)
 		{
 			throw new NotImplementedException();
 		}
 
-		public void BlogDelete(CitiesAddViewModel blog)
+		public void BlogDelete(Blog blog)
 		{
 			throw new NotImplementedException();
 		}
 
-		public void BlogUpdate(CitiesAddViewModel blog)
+		public void BlogUpdate(Blog blog)
 		{
 			throw new NotImplementedException();
 		}
 
-		public List<CitiesAddViewModel> GetBlogListWithCategory()
+		public List<Blog> GetBlogListWithCategory()
 		{
 			return _blogDal.GetListWithCategory();
 		}
 
-		public CitiesAddViewModel GetById(int id)
+		public Blog GetById(int id)
 		{
 			throw new NotImplementedException();
 		}
 
-		public List<CitiesAddViewModel> GetBlogById(int id)
+		public List<Blog> GetBlogById(int id)
 		{
 			return _blogDal.GetListAll(x=> x.BlogID == id);
 		}
 
-		public List<CitiesAddViewModel> GetList()
+		public List<Blog> GetList()
 		{
 			return _blogDal.GetListAll();
 		}
 
-		public List<CitiesAddViewModel> GetBlogListByWriter(int id)
+		public List<Blog> GetBlogListByWriter(int id)
 		{
 			return _blogDal.GetListAll(x=>x.WriterID == id);
 		}
